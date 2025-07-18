@@ -1,0 +1,21 @@
+//#include <dt-bindings/zmk/matrix_transform.h>
+#include "dactyl_manuform_5x6.dtsi"
+
+/ {
+kscan0: kscan {
+    compatible = "zmk,kscan-gpio-matrix";
+    label = "KSCAN";
+
+    diode-direction = "col2row";
+    row-gpios
+        = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
+
+};
+
+};

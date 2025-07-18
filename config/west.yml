@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: englmaxi 
+      url-base: https://github.com/englmaxi
   projects:
     - name: zephyr
       remote: zmkfirmware
-      revision: 87fa801c5b91f13599358c003bdcafaa54e3543c  # v3.5.0+zmk-fixes
+      revision: 628a0d85e36938dddb6f0dfc6dc902de7359711c
       import:
         name-blocklist:
           - ci-tools
@@ -28,7 +30,10 @@ manifest:
           - trusted-firmware-m
     - name: zmk
       remote: zmkfirmware
-      revision: f92dce43e9c76bdba76359ec1f90e606cd609ee0  # main
+      revision: cef7af4408cc44c20fab93a0b2e20b3429d0a98e  # 
       import: app/west.yml
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: 9c84784c7a1c68cbd437288fa11ee7a572bdf320
   self:
     path: config
